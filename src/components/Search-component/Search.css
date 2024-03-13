@@ -1,0 +1,39 @@
+.searchBar {
+  width: calc(100% - var(--mar) * 2);
+  position: absolute;
+  left: var(--mar);
+  top: var(--mar);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBar input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0.07rem black solid;
+  height: 2rem;
+  border-radius: 0.5rem;
+  text-indent: 1rem;
+  background-color: var(--bgColor);
+  margin-right: 0.5rem;
+}
+.searchBar input:focus {
+  background-color: #fff;
+  outline: 0;
+}
+.searchBar button {
+  padding: 0.5rem 1rem;
+  background-color: var(--btnColor);
+  color: white;
+  border: 0;
+  border-radius: 0.5rem;
+}
+.userCardContainer {
+  width: calc(100% - var(--mar) * 2);
+  height: calc(100% - 7rem);
+  overflow-y: auto;
+  top: 4rem;
+  left: var(--mar);
+  position: absolute;
+  /* background: #000; */
+}

@@ -1,0 +1,37 @@
+.registerForm {
+  position: absolute;
+  top: 0rem;
+  left: calc(var(--mar) * 2);
+  width: calc(100% - var(--mar) * 4);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - var(--mar) * 2);
+  gap: 1rem;
+}
+.form input {
+  border: 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.form button {
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.spaceR {
+  height: 25rem;
+  width: 2rem;
+  display: block;
+}
+
+@media screen and (min-width: 786px) {
+  .registerForm {
+    width: 25rem;
+  }
+  .form {
+    width: 25rem;
+  }
+}

@@ -1,0 +1,6 @@
+.bg {
+  background-color: var(--mainBgc);
+  width: var(--friendWidth);
+  height: 100%;
+  border-radius: var(--borderR) 0 0 var(--borderR);
+}

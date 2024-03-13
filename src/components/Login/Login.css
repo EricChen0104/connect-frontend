@@ -1,0 +1,45 @@
+.loginForm {
+  position: absolute;
+  top: 1rem;
+  left: calc(var(--mar) * 2);
+  width: calc(100% - var(--mar) * 4);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - var(--mar) * 2);
+  gap: 1rem;
+}
+.form input {
+  border: 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.form button {
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.space {
+  height: 20rem;
+  width: 2rem;
+  display: block;
+}
+.errorMsg {
+  width: calc(100% - var(--mar) * 2);
+  background-color: rgb(217, 117, 117);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .loginForm {
+    width: 25rem;
+  }
+  .loginForm form {
+    width: 25rem;
+  }
+}

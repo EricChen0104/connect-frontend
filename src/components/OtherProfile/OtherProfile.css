@@ -1,0 +1,6 @@
+#isFollow {
+  background-color: transparent;
+  border: 0.1rem solid var(--btnColor);
+  color: var(--btnColor);
+  box-sizing: border-box;
+}

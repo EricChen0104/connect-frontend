@@ -1,0 +1,70 @@
+/* .mainInfor {
+  background-color: var(--mainBgc);
+  position: absolute;
+  right: var(--mar);
+  top: var(--mar);
+  width: calc(100% - var(--friendWidth));
+  height: calc(100% - var(--mar) * 2);
+  border-radius: var(--borderR);
+  box-shadow: -10px 10px 60px 10px rgba(0, 0, 0, 0.25);
+} */
+.logo {
+  font-size: 2rem;
+  position: absolute;
+  /* top: calc(var(--mar) * -1); */
+  left: var(--mar);
+  font-weight: bold;
+  color: var(--btnColor);
+}
+
+.loginSignup {
+  position: absolute;
+  right: calc(var(--mar) * 2);
+  top: calc(var(--mar) * 3);
+  font-size: 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.btnLink {
+  text-decoration: none;
+  color: var(--btnColor);
+  padding: 0;
+}
+.mainInfor {
+  background-color: var(--mainBgc);
+  position: absolute;
+  right: var(--mar);
+  top: var(--mar);
+  width: calc(100% - var(--mar) * 2);
+  height: calc(100% - var(--mar) * 2);
+  border-radius: var(--borderR);
+  /* box-shadow: -10px 10px 60px 10px #7796a8aa; */
+  box-shadow: -10px 10px 60px 10px rgba(114, 144, 163, 0.567);
+}
+.login,
+.logout {
+  border: 0.07rem solid black;
+  padding: 0rem 0.7rem;
+  border-radius: 0.5rem;
+  /* background-color: var(--btnColor); */
+  /* color: white; */
+  box-sizing: border-box;
+  padding-bottom: 0.2rem;
+}
+@media screen and (min-width: 800px) {
+  .mainInfor {
+    right: var(--mar);
+    top: var(--mar);
+    width: calc(100% - var(--friendWidth));
+    height: calc(100% - var(--mar) * 2);
+    /* box-shadow: -10px 10px 60px 10px #7796a8aa; */
+  }
+  .loginSignup {
+    right: calc(var(--mar) * 4);
+  }
+  .logo {
+    left: calc(var(--mar) * 2);
+  }
+}
