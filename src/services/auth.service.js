@@ -1,6 +1,6 @@
 import axios from "axios";
-const API_URL = "https://connect-api.onrender.com/api/user";
-const API_URLOther = "https://connect-api.onrender.com/api/other";
+const API_URL = "https://connect-api-p3po.onrender.com/api/user";
+const API_URLOther = "https://connect-api-p3po.onrender.com/api/other";
 
 class AuthService {
   login(email, password) {
