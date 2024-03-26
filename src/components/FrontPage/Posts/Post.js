@@ -18,6 +18,7 @@ const Post = ({
 }) => {
   const navigate = useNavigate();
   const [postData, setPostData] = useState(null);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     PostService.getAll()
       .then((data) => {
@@ -27,7 +28,8 @@ const Post = ({
       .catch((e) => {
         console.log(e);
       });
-  }, [reloadPost]);
+    setLoading(false);
+  }, []);
 
   let handleAddBtn = () => {
     navigate("/create-post");
@@ -44,6 +46,7 @@ const Post = ({
           </div>
         )}
         <div className="all-posts">
+          {loading && <div>Loading...</div>}
           {postData && postData.length != 0 && (
             <div>
               {postData

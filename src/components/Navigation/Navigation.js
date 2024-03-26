@@ -13,26 +13,34 @@ const Navigation = ({ currentUser, setCurrentUser, moreMenu, setMoreMenu }) => {
     setMoreMenu(!moreMenu);
     navigate("/edit-post");
   };
-  let viewPost = PostService.getCurrentViewPost();
+  // let [viewPost, setViewPost] = useState("");
+  // PostService.getCurrentViewPost(id)
+  //     .then((data) => {
+  //       setViewPost(data.data);
+  //       console.log(data.data);
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //     });
   let handleDelete = () => {
     const confirm = window.confirm(
       "Are you sure you want to delete this post?"
     );
 
-    if (confirm) {
-      PostService.delete(viewPost._id)
-        .then((data) => {
-          window.alert("post has been delete successfully!");
-          setMoreMenu(!moreMenu);
-          window.location.reload();
-          // console.log(data);
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-    } else {
-      setMoreMenu(!moreMenu);
-    }
+    //   if (confirm) {
+    //     PostService.delete(viewPost._id)
+    //       .then((data) => {
+    //         window.alert("post has been delete successfully!");
+    //         setMoreMenu(!moreMenu);
+    //         window.location.reload();
+    //         // console.log(data);
+    //       })
+    //       .catch((e) => {
+    //         console.log(e);
+    //       });
+    //   } else {
+    //     setMoreMenu(!moreMenu);
+    //   }
   };
 
   return (

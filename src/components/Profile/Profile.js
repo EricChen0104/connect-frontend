@@ -3,6 +3,7 @@ import "./Profile.css";
 import PostService from "../../services/post.service";
 import PostCard from "../Post-card/Post-card";
 import { useNavigate } from "react-router-dom";
+import TextareaAutosize from "react-textarea-autosize";
 
 const Profile = ({
   currentUser,
@@ -39,7 +40,8 @@ const Profile = ({
             <h2>{currentUser.user.username}</h2>
             <img src="/icons/User.png" alt="" />
           </div>
-          <div className="bio">{currentUser.user.bio}</div>
+          <TextareaAutosize value={currentUser.user.bio} className="bio" />
+          {/* <div className="bio">{currentUser.user.bio}</div> */}
           <div className="profile-buttons">
             <button onClick={handleEdit}>Edit Profile</button>
             <button>Share Profile</button>

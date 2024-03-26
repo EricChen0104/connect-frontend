@@ -3,7 +3,7 @@ import "./ViewPost.css";
 import CommentCard from "../Comment-card/Comment-card";
 import PostService from "../../services/post.service";
 import AuthService from "../../services/auth.service";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import TextareaAutosize from "react-textarea-autosize";
 
 const ViewPostComponent = ({ currentUser, setLastPostPlace }) => {
