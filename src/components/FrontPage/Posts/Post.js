@@ -23,12 +23,12 @@ const Post = ({
     PostService.getAll()
       .then((data) => {
         setPostData(data.data);
+        setLoading(false);
         // console.log(data.data);
       })
       .catch((e) => {
         console.log(e);
       });
-    setLoading(false);
   }, []);
 
   let handleAddBtn = () => {
@@ -46,7 +46,7 @@ const Post = ({
           </div>
         )}
         <div className="all-posts">
-          {loading && <div>Loading...</div>}
+          {loading && <div className="loadingText">Loading...</div>}
           {postData && postData.length != 0 && (
             <div>
               {postData

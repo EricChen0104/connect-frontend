@@ -41,6 +41,11 @@
   position: absolute;
   bottom: 0;
 }
+.loadingText {
+  position: absolute;
+  top: 3rem;
+  left: 1.5rem;
+}
 
 @media screen and (min-width: 800px) {
   .frontPage-posts {
@@ -50,5 +55,8 @@
   .frontPage-posts-1 {
     width: calc(100% - var(--mar) * 4);
     margin-left: calc(var(--mar) * 2);
+  }
+  .loadingText {
+    left: 2rem;
   }
 }
