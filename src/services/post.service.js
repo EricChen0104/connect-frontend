@@ -1,9 +1,9 @@
 import axios from "axios";
-// const API_URL = "https://connect-api-p3po.onrender.com/api/posts";
-// const API_URL_Unregister =
-//   "https://connect-api-p3po.onrender.com/api/unregister";
-const API_URL = "http://localhost:8081/api/posts";
-const API_URL_Unregister = "http://localhost:8081/api/unregister";
+const API_URL = "https://connect-api-p3po.onrender.com/api/posts";
+const API_URL_Unregister =
+  "https://connect-api-p3po.onrender.com/api/unregister";
+// const API_URL = "http://localhost:8081/api/posts";
+// const API_URL_Unregister = "http://localhost:8081/api/unregister";
 
 class PostService {
   post(title, description) {
